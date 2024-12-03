@@ -15,10 +15,9 @@ char* del_tab(char* str){
 
 char* read_text(){
         size_t buffer =  BUFFER;
-        char* text = (char*)malloc(buffer * sizeof(char)); // влияет ли char*?
+        char* text = (char*)malloc(buffer * sizeof(char)); 
         if (!text){
                 return NULL;
-		//printf("")
         }
         text[0] = '\0';
         int count_empt_str = 0;
